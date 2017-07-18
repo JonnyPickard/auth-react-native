@@ -32,12 +32,10 @@ class LoginForm extends Component {
     });
   }
 
-  onLoginFailure(err) {
+  onLoginFailure(error) {
     this.setState({
       loading: false,
-      email: '',
-      password: '',
-      error: err,
+      error,
     });
   }
 
